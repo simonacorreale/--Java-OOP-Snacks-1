@@ -10,7 +10,7 @@ public class ContoBancario {
 public ContoBancario (String codiceBancrio, double importoConto){
 
     this.codiceBancario = codiceBancrio;
-    this.importoConto = 00.00;
+    this.importoConto = 400.00;
 }
 // get codice conto
 public String getCodiceConto(){
@@ -65,22 +65,6 @@ public void ritiroDenaro (double ritiroTotale){
 
 }
 
-public void selezionaOpzione(int opzione){
-        
-    switch(opzione) {
-        case 1:
-        System.out.println("Hai selezionato l'opzione 1");
-        break;
-          
-        case 2:
-        System.out.println("Hai selezionato l'opzione 2");
-        break;
-        
-        default:
-        System.out.println("grazie e arrivederci");
-        break;
-      }
-
 }
 
-}
+
