@@ -11,9 +11,10 @@ public class UtilityClass {
     // Creazione di un oggetto ContoBancario con numero di conto
     ContoBancario conto = new ContoBancario("123456789", 100.00d);
 
+    System.out.println("Benvenuto nel sistema bancario! Cosa vuoi fare?");
     
-    
-       
+
+    scanner.close();
    }
 
 }
