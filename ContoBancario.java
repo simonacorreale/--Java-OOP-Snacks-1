@@ -6,7 +6,7 @@ public class ContoBancario {
     private String codiceBancario;
     private double importoConto;
 
-
+// costruttore
 public ContoBancario (String codiceBancrio, double importoConto){
 
     this.codiceBancario = codiceBancrio;
@@ -37,18 +37,18 @@ public void getImportoConto(double importoConto){
     this.importoConto = importoConto;
 
 }
-
+//metodo metodo per aggiungere
 public void depositoDenaro (double depositoTotale){
 
     if (importoConto >= 0) {
         this.importoConto += depositoTotale;
-        System.out.println("Stai depositando il seguente improto"+ depositoTotale + "saldo attuale di" + importoConto);
+        System.out.println("Stai depositando il seguente improto" + depositoTotale + "saldo attuale di" + importoConto);
     } else {
         System.out.println("l'importo totale deve essere superiore");
     }
 
 }
-    
+//metodo per ritirare
 public void ritiroDenaro (double ritiroTotale){
 
     if (ritiroTotale > 0 && ritiroTotale <= importoConto){
