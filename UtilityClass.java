@@ -11,8 +11,14 @@ public class UtilityClass {
     // Creazione di un oggetto ContoBancario con numero di conto
     ContoBancario conto = new ContoBancario("123456789", 100.00d);
 
-    System.out.println("Benvenuto nel sistema bancario! Cosa vuoi fare?");
-    
+    System.out.println("Benvenuto nel sistema di Zimo's Bank!");
+        System.out.println("Cosa vuoi fare?");
+        System.out.println("1. Ritirare");
+        System.out.println("2. Prelevare");
+        
+
+        int opzione = scanner.nextInt();  
+        conto.selezionaOpzione(opzione); 
 
     scanner.close();
    }
